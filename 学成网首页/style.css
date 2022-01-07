@@ -1,0 +1,86 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+/* 消除所有外边距和内边距 */
+
+.w {
+    width: 1200px;
+    margin: auto;  /*中心对齐*/
+}
+/* 创建一个大类，所有以中心样式的盒子都可以调用 */
+
+li{
+    list-style: none;
+ } /*取消li的圆点 */
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+a{
+    text-decoration: none;
+}
+.log{
+    float: left;
+    width: 198px;
+  height: 42px;
+}
+
+/* 实际开发中，导航栏用（li+a）做法 */
+.nav{
+    float: left; /*一浮全浮，一个盒子中所有元素都要浮动*/
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0px 15px;
+    
+}
+
+.nav ul li a:hover{
+   border-bottom:  2px solid #00a4ff; 
+   color: #00a4ff;
+    
+}
+.nav ul li a{
+    display: block;
+    height: 42px;
+    padding: 0 10px;  /*很重要，行内元素不通过width指定，通过块内padding撑开*/
+    line-height: 42px;
+    font-size: 18px0;
+    color: #050505;
+}
+.search{
+    float: left;
+    margin-left:  50px; 
+    
+}
+
+.search input {
+    float: left;
+    border: solid 1px #00a4ff;
+    border-right: none;
+    width: 412px;
+    height: 40px;
+    font-size: 14px;
+    color: #bfbfbf;
+    padding-left: 15px;
+}
+/* .search input:click{
+    border: solid 1px #00a4ff;
+} */
+
+.search button{
+    border: none;
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: #00a4ff;
+}
+
+.user{
+   float: right;
+    padding-top: 5px;
+}
